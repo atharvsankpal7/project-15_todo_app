@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.801);
+    color: white;
+
+}
+
+.container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    max-width: 600px;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+.app_body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    min-width: 100px;
+    column-gap: 15px;
+}
+
+.add_button {
+    width: 100px;
+    text-align: center;
+    text-justify: center;
+    cursor: pointer;
+}
+
+textarea {
+    max-height: 100px;
+    min-height: 25px;
+    border-radius: 10px;
+    max-width: 400px;
+    min-width: 200px;
+    padding: 10px;
+    background-color: rgb(107, 107, 98);
+    border: 2px solid rgb(162, 162, 162);
+}
+
+.notes_container {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: space-around;
+    column-gap: 25px;
+    row-gap: 25px;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+.heading {
+    text-align: center;
+}
+
+.note {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.note_body {
+    display: flex;
+    background-color: rgb(21, 157, 225);
+    text-align: center;
+    min-height: 150px;
+    min-width: 100px;
+    max-height: 150px;
+    max-width: 200px;
+    word-wrap: break-word;
+    overflow-y: scroll;
+    padding: 15px;
+    color: black;
+    font-weight: bolder;
+    font-size: larger;
+    width: 80%;
+}
+
+.note_body::-webkit-scrollbar {
+    width: 0.2em;
+    background-color: rgb(255, 255, 255);
+}
+
+body::-webkit-scrollbar {
+    width: 0.2em;
+    background-color: rgb(72, 65, 65);
+}
+
+.delete_button {
+    position: absolute;
+    right: 5%;
+    top: 2%;
+    color: red;
+    cursor: pointer;
+}
